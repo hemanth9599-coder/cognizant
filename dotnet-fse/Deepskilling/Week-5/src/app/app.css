@@ -1,0 +1,5 @@
+.site-header { align-items: center; background: #12355b; display: flex; gap: 2rem; justify-content: space-between; padding: 1rem max(1.5rem, calc((100vw - 1100px) / 2)); }
+.brand { color: #fff; font-size: 1.2rem; font-weight: 700; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+nav a { color: #dbeafe; text-decoration: none; } nav a.active, nav a:hover { color: #fff; text-decoration: underline; }
+.page-shell { margin: 0 auto; max-width: 1100px; padding: 2rem 1.5rem; }
