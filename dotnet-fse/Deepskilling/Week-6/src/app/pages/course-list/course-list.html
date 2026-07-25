@@ -1,0 +1,10 @@
+<h1>Available Courses</h1>
+<p *ngIf="loading$ | async">Loading courses...</p>
+<p *ngIf="error$ | async as error" class="error">{{ error }}</p>
+@if (courses$ | async; as courses) {
+  @if (enrolledIds$ | async; as enrolledIds) {
+    <section *ngIf="courses.length; else noCourses" class="course-grid"><app-course-card *ngFor="let course of courses; trackBy: trackByCourseId" appHighlight="lightblue" [course]="course" [enrolled]="enrolledIds.includes(course.id)" (courseSelected)="openCourse($event)" (enrollRequested)="onEnroll($event, enrolledIds.includes($event))" /></section>
+  }
+  <ng-template #noCourses><p>No courses match your search.</p></ng-template>
+}
+<p *ngIf="selectedCourseId" class="selection">Enrollment updated for course ID: {{ selectedCourseId }}</p>

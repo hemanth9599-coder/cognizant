@@ -1,0 +1,7 @@
+<a routerLink="/courses" class="back">← Back to courses</a>
+<section *ngIf="course; else missing" class="detail-card">
+  <p class="code">{{ course.code }}</p><h1>{{ course.name }}</h1>
+  <p>{{ course.description || 'A course offered in the current academic term.' }}</p>
+  <dl><div><dt>Credits</dt><dd>{{ course.credits }}</dd></div><div><dt>Instructor</dt><dd>{{ course.instructor || 'To be announced' }}</dd></div><div><dt>Status</dt><dd>{{ course.gradeStatus }}</dd></div></dl>
+</section>
+<ng-template #missing><p class="error">{{ error || 'Loading course…' }}</p></ng-template>

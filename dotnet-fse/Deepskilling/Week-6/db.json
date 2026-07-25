@@ -1,0 +1,11 @@
+{
+  "courses": [
+    { "id": 1, "name": "Angular Fundamentals", "code": "NG101", "credits": 3, "gradeStatus": "passed", "instructor": "Dr. Mehta", "description": "Build modern, component-based web applications with Angular." },
+    { "id": 2, "name": "Data Structures", "code": "CS201", "credits": 4, "gradeStatus": "pending", "instructor": "Prof. Iyer", "description": "Master core data structures and algorithmic problem solving." },
+    { "id": 3, "name": "Database Systems", "code": "DB220", "credits": 3, "gradeStatus": "failed", "instructor": "Dr. Rao", "description": "Learn relational design, SQL, and data integrity." },
+    { "id": 4, "name": "Web Engineering", "code": "WE310", "credits": 4, "gradeStatus": "pending", "instructor": "Prof. Shah", "description": "Design, build, test, and deploy dependable web systems." },
+    { "id": 5, "name": "Communication Skills", "code": "CM105", "credits": 1, "gradeStatus": "passed", "instructor": "Ms. Kapoor", "description": "Communicate professionally in technical and team settings." }
+  ],
+  "students": [{ "id": 1, "name": "Alex Morgan", "email": "alex@example.com" }],
+  "enrollments": []
+}

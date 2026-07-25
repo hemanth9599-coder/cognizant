@@ -1,0 +1,1 @@
+.course-grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); margin-top:1.25rem; } .selection { color:#166534; font-weight:600; margin-top:1rem; } .error { background:#fef2f2; color:#b91c1c; padding:.8rem; border-radius:.4rem; }
