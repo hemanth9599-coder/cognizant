@@ -1,0 +1,4 @@
+# Ignore application log files and log directories.
+*.log
+logs/
+**/logs/
